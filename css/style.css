@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.slider {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.current {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide.current .content {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 35px;
+}
+
+.buttons button {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.buttons button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.buttons #previous {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    margin-left: 15px;
+}
+
+.buttons #next {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    margin-right: 15px;
+}
+
+@media (max-width: 800px) {
+    .slide.current .content {
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-height: 320px) {
+    .slide.current .content p {
+        display: none;
+    }
+
+    .buttons #previous {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    margin-left: 15px;
+}
+
+.buttons #next {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    margin-right: 15px;
+}
+}
+
+/* Images */
+.slide.current:nth-child(1) {
+    background: url(/img/artist-guitar-guitarist-33597.jpg) no-repeat center center/cover;
+}
+.slide.current:nth-child(2) {
+    background: url(/img/audience-band-concert-1105666.jpg) no-repeat center center/cover;
+}
+.slide.current:nth-child(3) {
+    background: url(/img/audio-black-and-white-black-and-white-6966.jpg) no-repeat center center/cover;
+}
+.slide.current:nth-child(4) {
+    background: url(/img/audio-dj-mix-63703.jpg) no-repeat center center/cover;
+}
+.slide.current:nth-child(5) {
+    background: url(/img/blur-classic-close-up-371836.jpg) no-repeat center center/cover;
+}
+.slide.current:nth-child(6) {
+    background: url(/img/chord-close-up-electric-guitar-96380.jpg) no-repeat center center/cover;
+}
