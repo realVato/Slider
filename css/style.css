@@ -9,7 +9,7 @@
     height: 100vh;
     width: 100vw;
     line-height: 1.6;
-    overflow: hidden;
+    
 }
 
 .slide {
@@ -69,7 +69,7 @@
     }
 }
 
-@media (max-height: 320px) {
+@media (max-height: 450px) {
     .slide.current .content p {
         display: none;
     }
